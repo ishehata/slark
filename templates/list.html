@@ -1,0 +1,7 @@
+<h4>List</h4>
+
+{{ range $i, $item := . }}
+    {{ range $field, $val := $item }}
+    <h4>{{ $val }}</h4>
+    {{ end }}
+{{ end }}
